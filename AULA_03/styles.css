@@ -1,0 +1,21 @@
+.cabecalho{
+    display: flex;
+}
+
+.lado-esquerdo{
+    width: 50%;
+    text-align: center;
+}
+
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.lado-direito img{
+    width: 450px;
+    height: 300px;
+}
