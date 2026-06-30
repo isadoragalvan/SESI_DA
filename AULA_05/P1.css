@@ -1,0 +1,47 @@
+body{
+    margin: 1%;
+    color: ghostwhite;
+}
+
+.tela{
+    display: flex;
+    height: 96vh;
+
+}
+
+.lado_esquerdo{
+    width: 45%;
+    height: 900px ;
+    text-align: center;
+    background-image: url(pug.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+
+.le1{
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 300%;
+}
+
+.lado_direito{
+    width: 55%;
+    text-align: center;
+    background-color: white;
+}
+
+.ld1{
+  text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;  
+    font-size: 320%;
+}
+
+.botões{
+    
+}
