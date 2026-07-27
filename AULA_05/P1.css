@@ -1,5 +1,4 @@
 body{
-    margin: 1%;
     color: ghostwhite;
 }
 
@@ -10,7 +9,7 @@ body{
 }
 
 .lado_esquerdo{
-    width: 45%;
+    width: 40%;
     height: 900px ;
     text-align: center;
     background-image: url(pug.png);
@@ -29,19 +28,9 @@ body{
 }
 
 .lado_direito{
-    width: 55%;
-    text-align: center;
-    background-color: white;
-}
-
-.ld1{
-  text-align: center;
-    color: black;
-    font-family: sans-serif;
-    font-weight: 700;  
-    font-size: 320%;
-}
-
-.botões{
-    
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
