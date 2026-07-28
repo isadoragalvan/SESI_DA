@@ -58,6 +58,7 @@ body {
 }
 
 .entrar-btn {
+    text-transform: uppercase;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -70,6 +71,7 @@ body {
     font-weight: bold;
     color: white;
     border: 1px solid, black;
+    text-decoration: none;
 }
 
 .entrar-btn:hover {
