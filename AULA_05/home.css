@@ -113,5 +113,55 @@ header p {
     background-position: center;
     border-radius: 70px;
     margin: 20px;
+}
 
+.grupo-dicas{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.dicas-ld{
+    width: 50%;
+}
+
+.dicas-le{
+    width: 50%;
+}
+
+.dicas-le{
+    font-size: 41px;
+    font-weight: bold;
+}
+
+.dicas-le p{
+    font-size: 28px;
+    color: #5C5C5C;
+
+}
+
+,.dicas-le span{
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.dicas-ld img{
+    width: 684px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.grupo-assinar{
+    
 }
