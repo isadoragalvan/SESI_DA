@@ -197,3 +197,30 @@ footer h1 {
     justify-content: space-between;
     align-items: center;
 }
+
+.menu-rodape p{
+    margin-left: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+  .menu-itens ul{
+        display: flex;
+        margin-right: 50px;
+    }
+    .menu-itens li{
+        margin-left: 40px;
+        list-style-type: none;
+        font-size: 18px
+    }
+
+      .iten-selecionado{
+        color: #EBC154;
+        font-weight: bold;
+    }
+
+    footer hr{
+        color: white;
+        border: 1px solid white;
+        margin-top: -30px;
+    }
