@@ -41,16 +41,29 @@ function cadastro() {
 
 function recuperar_senha() {
     // 1º Carregar os valores dos campos NOME e PALAVRA-PASSE
-    const nome_digitado = document.getElementById("rNome").value;
-    const palavrapasse_digitada = document.getElementById("rPalavraPasse").value;
-
-    const nome_salvo = localStorage.getItem("nome");
-    const palavrapasse_salva = localStorage.getItem("palavrapasse");
+    const nome = document.getElementById("nome").value;
+    const palavrapasse = document.getElementById("palavrapasse").value;
+    const nova_senha = document.getElementById("nova_senha")
 
 // 2º Buscar no localStorage os valores de NOME e PALAVRA-PASSE
-
+const ls_nome = localStorage.getItem("nome");
+const ls_palavra_passe = localStorage.getItem("palavra_passe");
+const ls_senha = localStorage.getItem("senha");
 
 // 3º Comparar se os valores carregados nos campos da tela
+if(nome == ls_nome && palavrapasse == ls_palavra_passe){
+    alert("SENHA: " + ls_senha);
+}else{
+    const quantidade_erros = Number(localStorage)
+    alert("Nome ou palavra passe estão incorretos");
+    nome.value = "";
+    palavrapasse.value = "";
+    ls_senha.value = "";
+
+    quantidade_erros++;
+
+    localStorage.setItem("quantidade_erros", quantidade_erros)
+}
 // são compatíveis com os valores armazenados no localStorage.
 //
 // Se forem iguais, exibir a senha na tela ou em um alert.
