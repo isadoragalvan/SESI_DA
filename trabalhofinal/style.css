@@ -1,0 +1,142 @@
+/* ===== Cores em um só lugar ===== */
+:root {
+    --fundo: #eaf5fd;
+    --cartao: #ffffff;
+    --azul: #4aa8e8;
+    --azul-escuro: #2b7bb9;
+    --azul-claro: #d6ecfb;
+    --texto: #1f3a4d;
+    --borda: #b9dcf3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* o fundo azul fica no html; o body vira o "cartão" central */
+html {
+    background: var(--fundo);
+}
+
+body {
+    max-width: 520px;
+    margin: 32px auto;
+    padding: 24px;
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.5;
+
+    /* duas colunas: label à esquerda, campo à direita */
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 14px 16px;
+    align-items: center;
+}
+
+/* ===== Labels e campos ===== */
+label {
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+input[type="text"],
+input[type="select"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background: #f7fbff;
+    color: var(--texto);
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    justify-self: start;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--azul);
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+    outline: 3px solid var(--azul-claro);
+    border-color: var(--azul);
+}
+
+/* ===== Botão e link ocupam a linha inteira ===== */
+button {
+    grid-column: 1 / -1;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: var(--azul);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--azul-escuro);
+}
+
+a {
+    grid-column: 1 / -1;
+    justify-self: center;
+    color: var(--azul-escuro);
+}
+
+/* ===== Resumo e lista de tarefas (quando você criar #resumo e #lista) ===== */
+#resumo {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+#lista {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 12px 14px;
+    background: var(--fundo);
+    border: 1px solid var(--borda);
+    border-left: 5px solid var(--azul);
+    border-radius: 8px;
+}
+
+#lista li span {
+    flex: 1;
+}
+
+#lista li button {
+    grid-column: auto;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+/* ===== Celular ===== */
+@media (max-width: 520px) {
+    body {
+        grid-template-columns: 1fr;
+        margin: 12px;
+    }
+
+    label {
+        margin-bottom: -8px;
+    }
+}

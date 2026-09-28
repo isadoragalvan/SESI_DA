@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Planejador de Estudos</title>
+</head>
+<body>
+
+    <label for="tarefa">Tarefa</label>
+    <input id="tarefa" type="text">
+
+    <label for="materia">Matéria</label>
+    <input id="materia" type="text">
+
+    <label for="data">Data Limite</label>
+    <input id="data" type="date">
+
+<label for="prioridade">Prioridade</label>
+<select id="prioridade">
+    <option value="Alta">Alta</option>
+    <option value="Média">Média</option>
+    <option value="Baixa">Baixa</option>
+</select>
+
+    <label for="tempo">Tempo</label>
+    <input id="tempo" type="time">
+
+
+<button onclick="adicionarTarefa()">Adicionar tarefa</button>
+
+<p id="resumo"></p>
+<ul id="lista"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
